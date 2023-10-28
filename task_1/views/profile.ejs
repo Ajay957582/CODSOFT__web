@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bolg-blog</title>
+    <link rel="stylesheet" href="/css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1>PROFILE</h1>
+        </header>
+
+        <div class="identity">
+            <div class="p_img"><img src=<%= pic %> alt=""></div>
+
+            <div class="p_name">
+                <h1><%= name %></h1>
+            </div>
+            <div class="p_para">
+                <p><%= description %></p>
+
+            </div>
+            <div class="logout">
+                <a href="/logout"><button>Log-Out</button></a>
+
+            </div>
+        </div>
+
+        <div class="blogs">
+            <div class="allblogs">
+                <h1>YOUR BLOGS</h1>
+            </div>
+
+            <div class="allcards">
+
+
+                <% array.forEach(element => { %>
+                 
+                    <div class="cards">
+                        <div class="card-img">
+                            <img src=<%= element.b_url %> alt="">
+                        </div>
+                        <div class="card_detail">
+                            <div class="title">
+                                <h1><%= element.b_title %></h1>
+                            </div>
+                            <div class="description">
+                                <p class="content"><%= element.b_content %></p>
+                            </div>
+                            <div class="button">
+                              <a href="/individual?search=<%=element.b_title %>">
+                                <button >READ</button>
+                            </a>  
+                            </div>
+    
+                        </div>
+                    </div>
+
+                <% }) %>
+
+
+
+
+
+
+            </div>
+        </div>
+    </div>
+    <script src="/js/profile.js"></script>
+
+</body>
+
+</html>

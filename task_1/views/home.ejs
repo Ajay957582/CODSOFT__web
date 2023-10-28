@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-blog</title>
+    <link rel="stylesheet" href="/css/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logoWrap">
+                    <div class="logo"><img src="/assets/white.png" alt=""></div>
+                    
+                </div>
+                <div class="navigation">
+                    <a href="" style="text-decoration:none;"><div class="navitems home">HOME</div></a>
+                    <a href="" style="text-decoration:none;"><div class="navitems post" id="contact">CONTACT</div></a>
+                    <a href="/profiledirection" style="text-decoration:none;"><div class="navitems profile"><%= variable2 %></div></a>
+
+                </div>
+            </nav>
+            <h1 class="center">Blogs</h1>
+            <a href="/direction" id="headerButton"><button style="border: none;"><%= variable %></button></a>
+
+        </header>
+        <!---------------- headre ends here ----------------->
+        <div class="searchBox" >
+            <div class="searchWrap">
+                <form action="/individual" method="get"  class="searchForm" >
+                    <input type="text" name="search" id="search" placeholder="Search blog TITLES only" class="desi">
+                    <input type="submit" value="Search">
+
+                </form>
+                <div class="suggestedTitles"><div class="internal"></div></div>
+
+            </div>
+
+        </div>
+        <!-- -----------------------search box ends here -->
+        <div class="recent">
+            <h4>Recent Blogs</h4>
+        </div>
+        <div class="cardHouse">
+
+
+            <div class="card">
+                <img src=<%= cardOneImg %> alt=" Image">
+                <div class="card-content">
+                    <h3><%= cardOneTitle %></h3>
+                    <a href="/individual?search=<%=cardOneTitle%>"><button>Read</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src=<%= cardTwoImg %> alt="Product Image">
+                <div class="card-content">
+                    <h3><%= cardTwoTitle %></h3>
+                    <a href="/individual?search=<%=cardTwoTitle%>"><button>Read</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src=<%= cardThreeImg %> alt="Product Image">
+                <div class="card-content">
+                    <h3><%= cardThreeTitle %></h3>
+                    <a href=""><button>Read</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src=<%= cardFourImg %> alt="Product Image">
+                <div class="card-content">
+                    <h3><%= cardFourTitle %></h3>
+                    <a href=""><button>Read</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src=<%= cardFiveImg %> alt="Product Image">
+                <div class="card-content">
+                    <h3><%= cardFiveTitle %></h3>
+                    <a href=""><button>Read</button></a>
+                </div>
+            </div>
+            <div class="card">
+                <img src=<%= cardSixImg %> alt="Product Image">
+                <div class="card-content">
+                    <h3><%= cardSixTitle %></h3>
+                    <a href=""><button>Read</button></a>
+                </div>
+            </div>
+        </div>
+        <!------------------------------------- cards section ends here -->
+
+        <footer>
+            <div class="footer-content">
+                <h1>Contact Us</h1>
+              <div class="footer-icons">
+                <a href="https://www.instagram.com/ajaymore16.indore/"><i class="fa fa-instagram fa-2x "></i></a>
+                <a href="https://www.linkedin.com/feed/"><i class="fa fa-linkedin fa-2x"></i></a>
+                <a href="https://www.github.com"><i class="fa fa-github fa-2x"></i></a>
+                <a href="mailto:ajaymore1.indore@gmail.com"><i class="fa fa-mail-forward fa-2x"></i></a>
+              </div>
+              <p class="copyright">&copy; 2023 Blog-blog. All rights reserved.</p>
+              <p class="love">Made with ❤️ in BHARAT</p>
+            </div>
+          </footer>
+    </div>
+
+    <script src="/js/home.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog-Blog</title>
+    <link rel="stylesheet" href="/css/post.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <h2>Your Blog</h2>
+        </div>
+        <div class="body">
+            <form action="/post" method="post">
+
+                <div class="picture">
+                    <div class="img"><img alt="" id="imagelagao"></div>
+
+                    <!-- <div class="picturePack">
+                        <input type="text" name="photo_url" id="url" placeholder="image url">
+                        <button id="imgButton" >Add Image</button>
+                    </div> -->
+
+                </div>
+
+
+                <div class="inputs">
+                    <label for="img_url">Image-Url:</label>
+                    <div class="combo">
+                        <input type="text" id="img_url" name="img_url" required>
+                        <button id="photo_button">Add</button>
+                    </div>
+
+
+                    <label for="title">Title:</label>
+                    <input type="text" id="title" name="title" required>
+
+                    <label for="discription">Discription:</label>
+                    <textarea id="discription" name="discription"></textarea>
+
+                    <input type="submit" value="Submit">
+                </div>
+
+            </form>
+        </div>
+    </div>
+    <script src="/js/post.js"></script>
+</body>
+
+</html>

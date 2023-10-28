@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@900&family=Roboto+Mono&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+}
+/* .row {
+  background-color: red;
+} */
+.container {
+  border-radius: 5px;
+  padding: 0 13px 13px 13px;
+  width: fit-content;
+  height: fit-content;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  background-color: #808080;
+}
+.wrap {
+  height: 80%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+button {
+  cursor: pointer;
+  border-radius: 100%;
+  border: 2px solid black;
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  background-color: rgb(101 85 85);
+  color: white;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.input {
+  height: 68px;
+  width: 280px;
+  margin-bottom: 20px;
+  font-size: 30px;
+  padding: 10px;
+  letter-spacing: 5px;
+  border: none;
+  outline: none;
+  background-color: rgb(153 255 153);
+}
+/* .row {
+  width: 100px;
+} */
+p {
+  letter-spacing: 2px;
+  font-weight: bold;
+  color: white;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  font-size: 22px;
+}
+h1 {
+  text-transform: uppercase;
+  text-align: center;
+  margin: 50px;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+}

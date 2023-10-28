@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+    /* background-color: azure; */
+}
+header{
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+   color: white;
+    height: fit-content;
+    /* background-color: aquamarine; */
+    background-color: black;
+    padding: 6% 0 6% 0;
+    text-align: center;
+    font-weight: 10;
+}
+.personal{
+    height: fit-content;
+    /* background-color: rgb(235, 124, 240); */
+    padding: 5% 15%;
+    background-color: rgb(216, 216, 216);}
+.card{
+    background-color: white;
+    height:fit-content;
+    /* background-color: rgb(243, 7, 255); */
+    display: flex;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.9);
+    border-radius: 7px;
+    padding: 10px;
+}
+.card-img{
+    /* background-color: brown; */
+    max-height: auto;
+    width: 15%;
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.9);
+    margin-right: 20px;
+    /* margin: 1%; */
+}
+.card-img img{
+    border-radius: 10px;
+height: 100%;
+width: 100%;
+box-shadow: 4px 5px 6px rgba(0, 0, 0, 0.9);
+padding: 10px;
+object-fit: cover;
+}
+.card_detail{
+    height: fit-content;
+    width: 85%;
+    /* background-color: cadetblue; */
+    background-color: white;
+}
+.title{
+    text-align: right;
+    height: fit-content;
+    padding: 10px;
+    font-size: 25px;
+    font-family: 'Roboto Mono', monospace;
+    /* background-color: chartreuse; */
+}
+.about{
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 2px;
+    color: gray;
+    font-size: 25px;
+    text-align: right;
+    /* border: 1px solid black; */
+    min-height: 120px;
+    padding: 10px 10px;
+}
+.description{
+    border-top: 3px solid rgb(180, 180, 180);
+    height: fit-content;
+    background-color: rgb(216, 216, 216);
+        font-size: 25px;
+    padding: 2% 15%;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(27, 27, 27);
+    letter-spacing: 2px;
+}
+.form{
+    height: fit-content;
+    background-color: black;
+    padding: 4% 15%;
+
+}
+.actual_form{
+    height: 50px;
+    /* background-color: tomato; */
+}
+.input{
+    height: 100%;
+    width: 90%;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 2px;
+    
+}
+.submit{
+    width: 9%;
+    height: 100%;
+    position: relative;
+    top: -3px;
+    background-color: white;
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: black;
+    transition:all 0.3 ease-out;
+    transition-duration: 0.5s;
+}
+.submit:hover{
+    width: 9%;
+    height: 100%;
+    position: relative;
+    top: -3px;
+    background-color: rgb(0, 0, 0);
+    border: 2px solid black;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+    transition:all 0.3 ease-out;
+    transition-duration: 0.5s;
+}
+.comment_list{
+    height: fit-content;
+    background-color: rgb(0, 206, 138);
+}
+
+
+
+
+
+.personal2{
+    height: fit-content;
+    background-color: rgb(216, 216, 216);
+        padding: 2% 15%;
+}
+.card2{
+    height: fit-content;
+    /* background-color: rgb(243, 7, 255); */
+    display: flex;
+    /* border: 2px solid rgb(20, 19, 19); */
+    margin-bottom: 7px;
+    border-radius: 7px;
+}
+.card-img2{
+    /* background-color: brown; */
+    max-width: auto;
+    width: 4%;
+    margin: 0.5%;
+    overflow: hidden;
+}
+.card-img2 img{
+height:49px ;
+width: 45px;
+border-radius: 100%;
+}
+.card_detail2{
+    height: fit-content;
+    width: 96%;
+    /* background-color: cadetblue; */
+    background-color: white;
+    border-radius: 7px;
+}
+.title2{
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+    height: fit-content;
+    padding: 5px 10px;
+    font-size: 15px;
+    /* background-color: chartreuse; */
+}
+.about2{
+    /* border: 1px solid black; */
+    /* min-height: 120px; */
+    padding: 3px 10px;
+    font-size: large;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(34, 34, 34);
+    letter-spacing: 1px;
+}

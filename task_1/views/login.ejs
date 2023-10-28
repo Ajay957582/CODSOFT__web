@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-blog</title>
+    <link rel="stylesheet" href="/css/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
+    
+</head>
+<body>
+    
+        <div class="wrapper">
+            <div class="main">
+    
+                <div class="head">
+                    <h3>LOGIN</h3>
+                </div>
+    
+                <div class="body">
+                    <form id="registerForm" action="/login" method="post">
+ 
+                        <div class="inputPacket">
+
+        
+                            <label for="userID">User ID:</label>
+                            <input type="email" id="userID" name="username" required>
+        
+                            <label for="password">Password:</label>
+                            <input type="password" id="password" name="password" required>
+
+                        </div>
+    
+                          <div class="formSubmit">
+                            <input type="submit" value="Login">
+    
+                          </div>
+                    </form>
+                </div>
+            </div>
+            <a href="/register" class="register">register</a>
+        </div>
+       
+    
+</body>
+</html>

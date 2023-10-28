@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>blog-blog</title>
+    <link rel="stylesheet" href="/css/individual.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Calligraffitti&family=Dosis:wght@500&family=Montserrat:wght@100&family=Roboto+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+
+        <header>
+            <h1 style="font-weight: 100;"><%= title %></h1>
+        </header>
+
+        <!-- ---------------------------------------------------no 2 -->
+
+        <div class="personal">
+
+            <div class="card">
+                <div class="card-img">
+                    <img src=<%=pic %> alt="">
+                </div>
+                <div class="card_detail">
+                    <div class="title">
+                        <h4>~ blog by <%= author_name %>  </h4>
+                    </div>
+                    <div class="about">
+                        <p> <%= about_author %> </p>
+                    </div>
+
+
+                </div>
+            </div>
+
+
+        </div>
+
+
+<!-- ------------------------------------------------------------------no 4 -->
+
+
+
+<section class="description">
+    <p><%= discription %></p>
+</section>
+
+<!--====================================================================== no 5 -->
+
+<section class="form">
+
+    <form action="/comment" method="get" class="actual_form">
+        <input type="text" name="comment" class="input" placeholder="Push Comment">
+        <input type="text" name="hidden" id="" value="<%= title %>" hidden>
+        <input type="submit" value="Comment" class="submit">
+    </form>
+
+</section>
+
+<!------------------------------------------------------------------- no 6 -->
+
+<section class="comment_list">
+
+
+<div class="sample">
+
+    <div class="personal2">
+
+
+        <% array.forEach(element => { %>
+         
+            <div class="card2">
+                <div class="card-img2">
+                    <img src=<%= element.c_url%> alt="">
+                </div>
+                <div class="card_detail2">
+                    <div class="title2">
+                        <h4><%= element.c_name %></h4>
+                    </div>
+                    <div class="about2">
+                        <p><%= element.c_comment %></p>
+                    </div>
+    
+    
+                </div>
+            </div>
+        <% }) %>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!--------------------------------------------------------------------------- ends here -->
+
+
+
+
+    </div>
+
+
+
+
+</body>
+
+</html>

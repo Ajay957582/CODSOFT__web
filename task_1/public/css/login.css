@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/yellow.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color: rgba(0, 0, 0, 0.4);
+    background-blend-mode: multiply; */
+}
+.card{
+    overflow: hidden;
+}
+.wrapper {
+    box-shadow: 30px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background-color: tomato; */
+}
+
+.main {
+    padding: 30px 20px;
+    border-radius: 5px;
+    background-color:transparent;
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: multiply;
+    height: 40%;
+    width: 30%;
+    backdrop-filter: blur(5px);
+}
+
+.head {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15%;
+}
+
+.body {
+    height: 85%;
+}
+
+#registerForm {
+    height: 100%;
+    width: 100%;
+}
+
+.inputPacket {
+    width: 80%;
+    margin: auto;
+}
+
+.formSubmit {
+    height: 11%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid gray; */
+}
+
+
+/*===========================================*/
+h3{
+    font-size: 25px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+font-weight: 900;
+}
+    
+
+label {
+    font-weight: bold;
+    font-size: 20px;
+    letter-spacing: 1px;
+    font-family: 'Dosis', sans-serif;
+    color: rgb(47, 47, 47);
+}
+
+input[type="email"],
+input[type="password"],
+textarea {
+    color: rgb(255, 255, 255);
+    height: 45px;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 20px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    border-bottom: 2px solid black;
+    font-family: 'Roboto Mono', monospace;
+    letter-spacing: 1px;
+}
+
+input[type="submit"] {
+
+    margin-top: 20px;
+    background-color: #ff0000;
+    color: white;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    font-size: larger;
+    letter-spacing: 1px;
+    transition: all 0.3 ease-in-out;
+    transition-duration: 0.5s;
+}
+
+input[type="submit"]:hover {
+    background-color: #fbff00;
+    color: rgb(0, 0, 0);
+    border: 2px solid black;
+}
+
+/*===========================================*/
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.register{
+    margin: 10px;
+    font-size: 20px;
+    color: blue;
+    letter-spacing: 2px;
+}
+.register:hover{
+    color: rgb(40, 104, 0);
+}

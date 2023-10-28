@@ -1,0 +1,411 @@
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    /* background-color: rgb(136, 225, 225); */
+}
+.wrapper{
+    height: 100%;
+    width: 100%;
+}
+.pankaj{
+  max-height: 100px;
+  width: 100%;
+  background-color: rgb(253, 253, 253);
+  font-size: 20px;
+  padding: 5px 10px;
+  text-align: center;
+  border: 1px solid rgb(254, 253, 253);
+  position: relative;
+  top: 2px;
+  cursor: pointer;
+  color: gray;
+}
+.suggestedTitles{
+  padding: 0 31%;
+  max-height: 5;
+  width: 100%;
+ position: relative;
+  /* padding: 10px 0; */
+
+}
+.internal{
+  position: relative;
+  top: 0;
+  border-radius: 20px;
+  overflow: hidden;
+
+}
+.card{
+  overflow: hidden;
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    /* background-color: blueviolet; */
+    background-image: url(/assets/pencil.jpg);
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size:cover;
+    padding: 6% 10% ;
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: multiply;
+}
+nav{
+    /* background-color: rgb(0, 255, 170); */
+    height: 12%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.brand{
+  font-size: 25px;
+  color: white;
+}
+.center{
+  font-size: 150px;
+  margin: 0 auto;
+  font-family: 'Calligraffitti', cursive;
+  color: transparent;
+  -webkit-text-stroke: 1px  #ffffff;
+  font-weight:lighter;
+}
+.center:hover{
+  font-size: 150px;
+  margin: 0 auto;
+  font-family: 'Calligraffitti', cursive;
+  color: transparent;
+  -webkit-text-stroke:unset;
+  font-weight:bold;
+  text-shadow: 2px 2px 0px #ffffff;}
+.logoWrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid black; */
+    width: 30%;
+}
+.logo{
+    height: 170px;
+    width: 250px;
+    /* background-color: blue; */
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  
+}
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 2px solid white; */
+    height: 80%;
+    width: 30%;
+    text-align: center;
+}
+
+.navitems{
+  height: auto;
+  width: auto;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 3px;
+  transition: all 0.3 ease-in-out;
+  transition-duration: 0.5s;
+
+}
+.navitems:hover{
+  height: auto;
+  width: auto;
+  font-size: larger;
+  color: white;
+  font-weight: bold;
+  font-family: 'Dosis', sans-serif;
+  letter-spacing: 3px;
+  transform: scale(1.2);
+  transition:all 0.3 ease-out;
+  transition-duration: 0.5s;
+  color: rgb(131, 131, 131);
+  
+}
+.navitems a{
+  height: auto;
+  width: auto;
+  text-decoration:none;
+}
+#headerButton button{
+  height: 50px;
+  width: 110px;
+  cursor: pointer;
+  /* background: linear-gradient(to bottom, #00131f, #b0b0b0); */
+  background-color: white;
+
+  border-radius: 25px;
+  /* box-shadow: 2px 2px 4px 0 #b2b2b2; */
+  font-family: Arial;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  transition:all 0.3 ease-out;
+  transition-duration: 0.5s;
+  
+} 
+#headerButton button:hover{
+  height: 50px;
+  width: 110px;
+  cursor: pointer;
+  /* background: linear-gradient(to top, #00131f, #b0b0b0); */
+  background-color: rgb(0, 0, 0);
+  border-radius: 25px;
+  font-family: Arial;
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-size: 16px;
+  padding: 11px 20px 10px 20px;
+  text-decoration: none;
+  
+}
+header a{
+  height: 41px;
+  width: 92px;
+  margin: 0 auto;
+}
+
+/* .navitems{
+
+} */
+/* font-family: 'Calligraffitti', cursive; */
+/*------------------------------------- header compleated */
+.searchBox{
+height: fit-content;
+background-color: rgb(216, 216, 216);
+display: flex;
+justify-content: center;
+align-items: center;
+padding: 78px 0;
+}
+.searchWrap{
+    width: 100%;
+    /* height: 80%; */
+    height: fit-content;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.searchForm{
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background-color: red; */
+    width: 100%;
+    height: 80%;
+    
+}
+
+#search{
+    width: 30%;
+    padding: 15px;
+    border-radius: 4px;
+    font-size: larger;
+    letter-spacing: 2px;
+    outline: none;
+    border: none;
+}
+.searchForm input[type="submit"] {
+    height: 52px;
+    width: 105px;
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    letter-spacing: 3px;
+
+}
+.all{
+    /* height: 20%; */
+    height: fit-content;
+    /* padding: 10% 20px; */
+}
+.allForm{
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.allForm input[type="submit"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* ---------------------search box ends here */
+
+
+.card {
+    background-color: #ffffff;
+    padding: 10px;
+    width: 300px;
+    margin: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .card img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+  
+  .card-content {
+    margin-top: 10px;
+  }
+  
+  .card-content h3 {
+    margin-bottom: 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: #000000;
+    letter-spacing: 2px;
+    font-weight: 999;
+  }
+  
+  .card-content button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    transition:all 0.3 ease-out;
+    transition-duration: 0.5s;
+  }
+  .card-content button:hover {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    letter-spacing: 2px;
+  }
+  .cardHouse{
+    padding: 10px 325px 50px 325px;
+    background-color: rgb(216, 216, 216);;
+   
+  }
+  /* ========================================cards section ends here */
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    background-color: #000000;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Dosis', sans-serif;
+    letter-spacing: 4px;
+  }
+  
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .footer-icons {
+    margin: 50px;
+    
+  }
+  
+  .footer-icons a img {
+    width: 25px;
+    margin: 0 5px;
+  }
+  
+  .footer-icons a{
+   
+    margin:0 25px;
+  }
+  
+  p {
+    margin: 0;
+  }
+  
+  p.copyright {
+    font-size: 20px;
+    opacity: 0.8;
+  }
+
+
+  .recent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    background-color: black;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 3px;
+  }
+  .recent h4{
+   padding: 1% 0%;
+   font-size: 30px;
+   /* background-color: yellow; */
+  }
+
+/* .customsize{
+  font-size: 30px;
+} */
+   .fa{
+    color: white;
+  }
+ .fa:hover{
+    color: rgb(158, 158, 158);
+  } 
+  .love{
+    margin-top: 30px;
+  }
